@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Notları</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<div>id yok</div>
+<div id="hey">id var</div>
+<div id="there">id var</div>
+<div>id yok</div>
+ 
+<script>
+// Using .one() so the handler is executed at most once
+// per element per event type
+$( "div[id]" ).one( "click", function() {
+  var idString = $( this ).text() + " = " + $( this ).attr( "id" );
+  $( this ).text( idString );
+});
+</script>
+ 
+</body>
+</html>
