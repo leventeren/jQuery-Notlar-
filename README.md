@@ -1,5 +1,5 @@
-# jQuery-Notlari
-jQuery Notları
+# jQuery Notları
+Ufak tefek bakmalık jQuery notları
 
 ## Başlıklar
 
